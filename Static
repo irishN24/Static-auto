@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void f(void) 
+{
+    auto int x = 0;
+    ++x;
+    // static int x = 0;
+    // ++x;
+    printf("%d\n", x);
+}
+
+int main(void)
+{
+    f();
+    f();
+    return 0;
+}
